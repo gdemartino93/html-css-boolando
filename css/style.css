@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headerbackground{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    /* debug header 100% height cambiare in arancione */
+    background-color: red;
+}
+.container-header-nav{
+    width: 80%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: orange;
+    margin: 0 10%;
+    z-index: 1000;
+}
+.logo>img{
+    height: 20px;
+    width: 100px;
+}
+.sezioni{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0 ,-50%);
+}
+.icon{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.icon>a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.sezioni>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* debug header fix */
+.red{
+    min-height: 900px;
+    background-color: beige;
+    z-index: 1;
+    position: relative;
+}
