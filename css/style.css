@@ -4,40 +4,28 @@
     box-sizing: border-box;
 }
 .headerbackground{
-    height: 50px;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
     /* debug header 100% height cambiare in arancione */
     background-color: orange;
+    margin: 0 auto;
 }
                                     /* header */
 .container-header-nav{
     width: 70%;
-    height: 50px;
-    position: fixed;
-    top: 0;
+    padding: 10px;
     background-color: orange;
-    margin: 0 15%;
-    z-index: 1000;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo>img{
-    height: 20px;
-    width: 100px;
+    width: 150px;
 }
-.sezioni{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0 ,-50%);
-}
-.icon{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0,-50%);
-}
+
 .icon>a{
     text-decoration: none;
     color: white;
@@ -49,17 +37,12 @@
     font-weight: bold;
     padding: 5px;
 }
-.logo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
+
                                             /* fine header */
 .container{
     width: 70%;
-    margin:50px 15%;
-    position: absolute;
+    margin:50px auto;
+    position: relative;
     top:50px;
     /* background-color: aquamarine; */
     display: flex;
@@ -73,12 +56,8 @@
     height: 400px;
     width: calc(100% / 3 - 20px);
     background-color: grey;
+    position: relative;
     /* border: 1px solid black; */
-}
-.prodotto>img{
-    width: 100%;
-    height: 100%;
-    
 }
 .marca{
     font-style: italic;
@@ -96,19 +75,84 @@
     text-decoration: line-through;
     display: inline-block;
 }
-/* debug header fix */
-.red{
-    min-height: 900px;
-    background-color: beige;
-    z-index: 1;
-    position: relative;
-}
+
 .label{
-    width: 100px;
     height: 25px;
-    background-color: green;
     color: white;
     text-align: center;
     padding: 2px;
+    text-align: center;    
+    margin: 1px 1px;
+    border-radius: 10px;
+}
+.green{
+    background-color: green;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+.red{
+    background-color: red;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
     font-weight: bold;
+}
+.label.green:nth-child(2){
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+.heart{
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    right: 0;
+}
+.heart:hover{
+    color: red;
+    cursor: pointer;
+}
+.heart>i{
+    font-size: 30px;
+}
+.prodotto:hover .imganteprima{
+    display: none;  
+}
+.prodotto:hover .imgnascosta{
+    display: block;  
+}
+.imgnascosta{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.imganteprima{
+    width: 100%;
+    height: 100%;
+}
+.footerbackground{
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    margin: 0 auto;
+}
+.container-footer{
+    width: 70%;
+    padding: 20px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    color: white;
+}
+.info>a{
+    text-decoration: none;
+    color: white;
+    padding-top: 50px;
+    margin-right: 10px;
 }
