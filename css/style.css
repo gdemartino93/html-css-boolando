@@ -41,21 +41,16 @@
                                             /* fine header */
 .container{
     width: 70%;
-    margin:50px auto;
-    position: relative;
-    top:50px;
-    /* background-color: aquamarine; */
+    margin:5% auto;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     
 }
+
 .prodotto{
     margin: 10px;
-    margin-bottom: 100px;
     height: 400px;
     width: calc(100% / 3 - 20px);
-    background-color: grey;
     position: relative;
 }
 .marca{
@@ -90,6 +85,7 @@
     position: absolute;
     bottom: 20px;
     left: 50px;
+    z-index: 20;
 }
 
 .red{
@@ -98,6 +94,7 @@
     bottom: 20px;
     left: 0;
     font-weight: bold;
+    z-index: 20;
 }
 .label.green:nth-child(2){
     position: absolute;
@@ -111,6 +108,7 @@
     background-color: white;
     top: 10px;
     right: 0;
+    z-index: 15;
 }
 .heart:hover{
     color: red;
@@ -120,19 +118,18 @@
     font-size: 30px;
 }
 /* cuore */
-
-.prodotto:hover .imganteprima{
-    display: none;  
-}
 .prodotto:hover .imgnascosta{
-    display: block;  
+    z-index: 11; 
 }
 .imgnascosta{
-    display: none;
+    position: absolute;
+    z-index:9;
     width: 100%;
     height: 100%;
 }
 .imganteprima{
+    position: absolute;
+    z-index: 10;
     width: 100%;
     height: 100%;
 }
@@ -167,3 +164,13 @@
     margin-bottom: 5px;
 }
 /* footer finr */
+
+.foto{
+    height: 85%;
+    width: 100%;
+    position: absolute;
+}
+.testo{
+    position: absolute;
+    bottom: 0;
+}
