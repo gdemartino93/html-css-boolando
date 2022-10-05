@@ -7,10 +7,12 @@
     height: 50px;
     width: 100%;
     position: fixed;
+    top: 0;
     z-index: 1000;
     /* debug header 100% height cambiare in arancione */
-    background-color: red;
+    background-color: orange;
 }
+                                    /* header */
 .container-header-nav{
     width: 80%;
     height: 50px;
@@ -52,6 +54,24 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+}
+                                            /* fine header */
+.container{
+    width: 80%;
+    height: 900px;
+    margin:50px 10%;
+    position: absolute;
+    top:50px;
+    background-color: aquamarine;
+    display: flex;
+    
+}
+.prodotto{
+    margin: 10px;
+    height: 400px;
+    width: calc(100% / 3 - 20px);
+    background-color: grey;
+    border: 1px solid black;
 }
 
 
